@@ -30,3 +30,42 @@ def main():
     print(f"「音声完成」ステータスのエピソード: {len(episodes)} 件")
 
     if not episodes:
+        print("配信対象のエピソードがありません。処理を終了します。")
+        return
+
+    rss_episodes = []
+    for ep in episodes:
+        audio_file_name = ep.get("audio_file_name")
+        if not audio_file_name:
+            print(f"警告: {ep.get('title')} に Audio_File_Name が設定されていません。スキップします。")
+            continue
+
+        audio_url = drive.get_audio_file_url(audio_file_name)
+        if not audio_url:
+            print(f"警告: Google Drive に {audio_file_name} が見つかりません。スキップします。")
+            continue
+
+        ep["audio_url"] = audio_url
+        rss_episodes.append(ep)
+
+        notion.update_status(ep["page_id"], "配信済み")
+        print(f"配信済みに更新: {ep.get('title')}")
+
+    generator = RSSGenerator(
+        channel_title="論文ポッドキャスト",
+        channel_description="arXivなどの学術論文をNotebookLMで音声化して配信するポッドキャストです。",
+        channel_link="https://github.com/ujigis/podcast-automation",
+        channel_image_url="",
+        channel_language="ja",
+        channel_author="あおきGISオープンデータ研究所",
+        channel_category="Education",
+    )
+    rss_xml = generator.generate(rss_episodes)
+    os.makedirs("rss", exist_ok=True)
+    with open("rss/feed.xml", "w", encoding="utf-8") as f:
+        f.write(rss_xml)
+    print("RSS フィードを rss/feed.xml に出力しました。")
+
+
+if __name__ == "__main__":
+    main()
