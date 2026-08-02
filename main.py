@@ -55,7 +55,7 @@ def main():
         channel_title="論文ポッドキャスト",
         channel_description="arXivなどの学術論文をNotebookLMで音声化して配信するポッドキャストです。",
         channel_link="https://github.com/ujigis/podcast-automation",
-        channel_image_url="",
+        channel_image_url="https://raw.githubusercontent.com/ujigis/podcast-automation/main/cover.png",
         channel_language="ja",
         channel_author="あおきGISオープンデータ研究所",
         channel_category="Education",
