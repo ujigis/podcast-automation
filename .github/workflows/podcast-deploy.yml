@@ -1,7 +1,7 @@
 name: Update RSS feed
 on:
   schedule:
-    - cron: '35 3 2 8 *'  # 日本時間 2026-08-02 12:35
+    - cron: '0 * * * *'  # 毎時間0分に実行（毎日24回）
   workflow_dispatch:
   
 permissions:
