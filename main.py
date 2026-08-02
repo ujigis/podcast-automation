@@ -59,6 +59,7 @@ def main():
         channel_language="ja",
         channel_author="あおきGISオープンデータ研究所",
         channel_category="Education",
+        channel_email="kazu013057@gmail.com",
     )
     rss_xml = generator.generate(rss_episodes)
     os.makedirs("rss", exist_ok=True)
