@@ -1,7 +1,6 @@
 """
 RSS 2.0 (iTunes/Spotify 対応) フィード生成モジュール
 """
-
 from datetime import datetime
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
@@ -17,6 +16,7 @@ class RSSGenerator:
         channel_language: str = "ja",
         channel_author: str = "",
         channel_category: str = "Education",
+        channel_email: str = "",
     ):
         self.channel_title = channel_title
         self.channel_description = channel_description
@@ -25,15 +25,22 @@ class RSSGenerator:
         self.channel_language = channel_language
         self.channel_author = channel_author
         self.channel_category = channel_category
+        self.channel_email = channel_email
 
     def generate(self, episodes: list) -> str:
         items_xml = "\n".join(
             [self._episode_to_item(ep) for ep in episodes]
         )
-
         image_tag = ""
         if self.channel_image_url:
             image_tag = f'<itunes:image href="{escape(self.channel_image_url)}"/>'
+
+        owner_tag = ""
+        if self.channel_email:
+            owner_tag = f"""<itunes:owner>
+      <itunes:name>{escape(self.channel_author)}</itunes:name>
+      <itunes:email>{escape(self.channel_email)}</itunes:email>
+    </itunes:owner>"""
 
         rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -47,6 +54,7 @@ class RSSGenerator:
     <itunes:author>{escape(self.channel_author)}</itunes:author>
     <itunes:category text="{escape(self.channel_category)}"/>
     <itunes:explicit>false</itunes:explicit>
+    {owner_tag}
     {image_tag}
     <lastBuildDate>{format_datetime(datetime.utcnow())}</lastBuildDate>
 {items_xml}
@@ -61,7 +69,6 @@ class RSSGenerator:
         description = escape(ep.get("description") or ep.get("abstract", ""))
         audio_url = ep.get("audio_url", "")
         pub_date_str = ep.get("publish_date_spotify")
-
         if pub_date_str:
             try:
                 pub_date = datetime.fromisoformat(pub_date_str)
@@ -69,9 +76,7 @@ class RSSGenerator:
                 pub_date = datetime.utcnow()
         else:
             pub_date = datetime.utcnow()
-
         guid = escape(audio_url or title)
-
         return f"""    <item>
       <title>{title}</title>
       <description>{description}</description>
