@@ -4,22 +4,21 @@
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>論文ポッドキャスト</title>
-<description>arXivなどの学術論文をNotebookLMで音声化して配信するポッドキャストです。</description>
-<link>https://github.com/ujigis/podcast-automation</link>
-<language>ja</language>
-<managingEditor>kazu013057@gmail.com</managingEditor>
-<image>
-    <url>https://via.placeholder.com/600x600.png?text=Podcast</url>
-    <title>論文ポッドキャスト</title>
+    <description>arXivなどの学術論文をNotebookLMで音声化して配信するポッドキャストです。</description>
     <link>https://github.com/ujigis/podcast-automation</link>
-</image>
-    <url>https://via.placeholder.com/600x600.png?text=Podcast</url>
-    <title>論文ポッドキャスト</title>
-    <link>https://github.com/ujigis/podcast-automation</link>
-</image>
-<itunes:category text="Education"/>
-<itunes:explicit>false</itunes:explicit>
-<lastBuildDate>Sat, 01 Aug 2026 23:12:30 -0000</lastBuildDate>
-       
+    <language>ja</language>
+    <itunes:author>あおきGISオープンデータ研究所</itunes:author>
+    <itunes:category text="Education"/>
+    <itunes:explicit>false</itunes:explicit>
+    
+    <lastBuildDate>Sun, 02 Aug 2026 04:13:34 -0000</lastBuildDate>
+    <item>
+      <title>Test Podcast</title>
+      <description>This is a test episode for Spotify integration.</description>
+      <enclosure url="https://example.com/audio/test.mp3" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://example.com/audio/test.mp3</guid>
+      <pubDate>Sun, 02 Aug 2026 04:13:34 -0000</pubDate>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
