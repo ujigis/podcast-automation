@@ -11,12 +11,12 @@
     <itunes:category text="Education"/>
     <itunes:explicit>false</itunes:explicit>
     
-    <lastBuildDate>Sun, 02 Aug 2026 06:46:05 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 09:06:55 -0000</lastBuildDate>
     <item>
-      <title>低軌道衛星ドップラー測定を用いたIoT発信機の地理的位置特定のためのABC法</title>
-      <description>IoT発信機の地理的位置特定は低軌道衛星のドップラー測定を用いることで実現できます。本論文ではABC法を提案し、複数の衛星からのドップラー測定データを活用して位置特定精度を向上させる手法について述べます。</description>
-      <enclosure url="https://drive.google.com/uc?export=download&amp;id=1K5pMb81c10tVDOvjk4R4L_V8Y7u0ERTP" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://drive.google.com/uc?export=download&amp;id=1K5pMb81c10tVDOvjk4R4L_V8Y7u0ERTP</guid>
+      <title>OT-FairBoost：表形式データにおける公平性正則化のための最適輸送ガイド付き勾配ブースティング</title>
+      <description>ニューラルネットワークが近年注目を集めていますが、表形式データにおいては勾配ブースティングなどのツリーベースモデルが依然として広く利用されています。しかし、これらのモデルはアルゴリズムのバイアスにより、特定の属性間で差別的な予測を生む可能性があります。本研究では、この課題に対する新たな手法「OT-FairBoost」を提案します。この手法は、目的関数にWasserstein-2距離のペナルティを直接組み込むことで、公平性基準を最適化します。LightGBMに本手法を統合して評価した結果、精度と公平性のトレードオフにおいて代替手法を上回る最高の結果を達成することが実証されました。</description>
+      <enclosure url="https://drive.google.com/uc?export=download&amp;id=1y1X-ZtTUzHTzp1x23_YaWNvGXf2exddQ" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://drive.google.com/uc?export=download&amp;id=1y1X-ZtTUzHTzp1x23_YaWNvGXf2exddQ</guid>
       <pubDate>Sun, 02 Aug 2026 00:00:00 -0000</pubDate>
       <itunes:explicit>false</itunes:explicit>
     </item>
