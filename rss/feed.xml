@@ -11,12 +11,12 @@
     <itunes:category text="Education"/>
     <itunes:explicit>false</itunes:explicit>
     
-    <lastBuildDate>Sun, 02 Aug 2026 06:27:37 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 06:46:05 -0000</lastBuildDate>
     <item>
       <title>低軌道衛星ドップラー測定を用いたIoT発信機の地理的位置特定のためのABC法</title>
       <description>IoT発信機の地理的位置特定は低軌道衛星のドップラー測定を用いることで実現できます。本論文ではABC法を提案し、複数の衛星からのドップラー測定データを活用して位置特定精度を向上させる手法について述べます。</description>
-      <enclosure url="https://example.com/audio/arxiv_2607_28585.m4a" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://example.com/audio/arxiv_2607_28585.m4a</guid>
+      <enclosure url="https://drive.google.com/uc?export=download&amp;id=1K5pMb81c10tVDOvjk4R4L_V8Y7u0ERTP" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://drive.google.com/uc?export=download&amp;id=1K5pMb81c10tVDOvjk4R4L_V8Y7u0ERTP</guid>
       <pubDate>Sun, 02 Aug 2026 00:00:00 -0000</pubDate>
       <itunes:explicit>false</itunes:explicit>
     </item>
