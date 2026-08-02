@@ -44,10 +44,7 @@ def main():
             print(f"警告: {ep.get('title')} に Audio_File_Name が設定されていません。スキップします。")
             continue
 
-        # 修正後：ダミーURLを使用（テスト用）
-audio_url = f"https://example.com/audio/{audio_file_name}"
-# audio_url = drive.get_audio_file_url(audio_file_name)  # 本番用
-
+        audio_url = f"https://example.com/audio/{audio_file_name}"
         ep["audio_url"] = audio_url
         rss_episodes.append(ep)
 
