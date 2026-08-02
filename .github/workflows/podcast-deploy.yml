@@ -1,7 +1,7 @@
 name: Update RSS feed
 on:
   schedule:
-    - cron: '0 * * * *'  # 毎時間0分に実行（毎日24回）
+    - cron: '30 * * * *'  # 毎時間30分に実行（テスト用）
   workflow_dispatch:
   
 permissions:
