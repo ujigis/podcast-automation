@@ -14,8 +14,8 @@
       <itunes:name>あおきGISオープンデータ研究所</itunes:name>
       <itunes:email>kazu013057@gmail.com</itunes:email>
     </itunes:owner>
-    
-    <lastBuildDate>Sun, 02 Aug 2026 12:37:46 -0000</lastBuildDate>
+    <itunes:image href="https://raw.githubusercontent.com/ujigis/podcast-automation/main/cover.png"/>
+    <lastBuildDate>Sun, 02 Aug 2026 12:56:50 -0000</lastBuildDate>
     <item>
       <title>低軌道衛星ドップラー測定を用いたIoT発信機の地理的位置特定のためのABC法</title>
       <description>IoT発信機の地理的位置特定は低軌道衛星のドップラー測定を用いることで実現できます。本論文ではABC法を提案し、複数の衛星からのドップラー測定データを活用して位置特定精度を向上させる手法について述べます。</description>
