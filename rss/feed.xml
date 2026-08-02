@@ -7,9 +7,12 @@
 <description>arXivなどの学術論文をNotebookLMで音声化して配信するポッドキャストです。</description>
 <link>https://github.com/ujigis/podcast-automation</link>
 <language>ja</language>
-<itunes:author>あおきGISオープンデータ研究所</itunes:author>
 <managingEditor>kazu013057@gmail.com</managingEditor>
 <image>
+    <url>https://via.placeholder.com/600x600.png?text=Podcast</url>
+    <title>論文ポッドキャスト</title>
+    <link>https://github.com/ujigis/podcast-automation</link>
+</image>
     <url>https://via.placeholder.com/600x600.png?text=Podcast</url>
     <title>論文ポッドキャスト</title>
     <link>https://github.com/ujigis/podcast-automation</link>
